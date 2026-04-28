@@ -1,0 +1,24 @@
+DROP TABLE IF EXISTS Alunos;
+
+CREATE TABLE Alunos (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  nome TEXT,
+  idade INTEGER,
+  cidade TEXT,
+  curso TEXT
+  );
+  
+  INSERT into Alunos (nome, idade, cidade, curso) VALUES
+  ('Ana Clara', 19, 'Belo Horizonte', 'Análise de Sistemas'),
+  ('João Pedro', 22, 'Contagem', 'Análise de Sistemas'),
+  ('Marina Souza', 20,'Betim', 'Administração'),
+  ('Carlos Henrique', 24,'Belo Horizonte', 'Engenharia'),
+  ('Fernanda Lima', 21,'Sabará', 'Análise de Sistemas'),
+  ('Lucas Martins', 18, 'Contagem', 'Administração'),
+  ('Juliana Rocha', 23, 'Betim', 'Engenharia'),
+  ('Pedro Henrique', 20, 'Belo Horizonte', 'Análise de Sistemas'),
+  ('Camila Ferreira', 22, 'Sabará', 'Administração'),
+  ('Rafael Souza', 25, 'Contagem', 'Engenharia');
+  
+  SELECT * FROM Alunos;
+  
