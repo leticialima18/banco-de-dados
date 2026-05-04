@@ -1,0 +1,15 @@
+DROP TABLE IF EXISTS Usuario;
+
+CREATE TABLE Usuario (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  email TEXT NOT NULL UNIQUE,
+  senha_hash TEXT NOT NULL,
+  ativo INTEGER
+);
+
+INSERT INTO Usuario (email, senha_hash, ativo)
+VALUES
+('rayamiga.leleling.com.br', 'amoalele', TRUE);
+
+SELECT * FROM Usuario;
+  
